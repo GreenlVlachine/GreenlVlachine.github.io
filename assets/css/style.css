@@ -1,100 +1,53 @@
-/* ===== Global Styles ===== */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
+  color: #f4f4f4;
+  background-color: #0b2f14; /* deep forest green */
   margin: 0;
-  color: #f5f5f5;
-  background-color: #013220; /* Forest green background */
+  padding: 0;
 }
 
-/* ===== Header & Navigation ===== */
 header {
-  background-color: #1b4332;
-  color: #f5f5f5;
   text-align: center;
-  padding: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  padding: 2rem 1rem;
+  background: #114422; /* slightly lighter forest green */
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-
-header p {
-  font-style: italic;
-  margin-top: 0.3rem;
-}
-
-nav {
-  margin-top: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
 }
 
 nav a {
-  color: #d4af37; /* gold accent */
+  margin: 0 1rem;
+  color: #c6ffb3;
   text-decoration: none;
-  margin: 0 12px;
-  font-weight: bold;
-  transition: color 0.2s ease-in-out;
+  font-weight: 500;
 }
 
 nav a:hover {
-  color: #ffffff;
   text-decoration: underline;
-}
-
-/* ===== Main Content ===== */
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  background-color: #f5f5f5;
-  color: #222;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  padding: 2rem;
 }
 
 section {
-  margin-bottom: 2rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
 h2 {
-  color: #013220;
-  border-bottom: 2px solid #d4af37;
+  border-bottom: 2px solid #c6ffb3;
   padding-bottom: 0.5rem;
+  color: #c6ffb3;
 }
 
-/* ===== Footer ===== */
+a {
+  color: #9df7b0;
+}
+
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #1b4332;
-  color: #ccc;
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: #d4af37;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 700px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
+  padding: 1rem 0;
+  background: #114422;
+  color: #f4f4f4;
 }
