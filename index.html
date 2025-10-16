@@ -80,9 +80,7 @@
         For the first augmentation, I decided on implementing a Dark Mode toggle utilizing Android Studio's built-in support for night themes. I did this by editing themes.xml and themes.xml (night), as well as adding color resources to colors.xml and colors.xml (night). Next, I added a
         SwitchMaterial into activity_settings.xml before wiring up the logic in SettingsActivity.java, which required some slight structural adjustments.
       </p>
-      <p>
-        [Placeholder: screenshot of light vs. dark mode with the SwitchMaterial here!]
-      </p>
+      <img src="assets/images/CS499 Milestone Two.JPG" alt="Standard vs. Dark Mode" width="100%">
       <p>
         After finalizing the Dark Mode augmentation, I decided to immediately implement password hashing, since my user database had them stored in plaintext. I recognized this as a critical vulnerability during my code review. I accomplished this by creating a new PasswordUtils class with
         logic for SHA-256 encryption (I decided on SHA-256 because I had used it previously), including error handling. 
