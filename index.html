@@ -60,8 +60,9 @@
     <section id="code-review">
       <h2>Milestone One: Code Review</h2>
       <p>
-        Before beginning with the augmentations, I first did an informal self-review of my code. I initially give a narrated walkthrough of the existing features and functionality of the project, then I analyzed to search for areas in need of improvement, documenting, testing, or security.
-        I then walk through the strategies of each of my planned enhancements, including the issues they will address and the obstacles I may face.
+        Before beginning with the augmentations, I first did an informal self-review of my code. I initially give a narrated walkthrough of the existing features and functionality of the project, then I analyze and search for areas in need of improvement, documenting, testing, or security.
+        I then walk through the strategies of each of my planned enhancements, including the issues they will address and the obstacles I may face. This review served to help me achieve course outcomes such as employing strategies to support organizational decision making and delivering
+        professional-quality communications.
       </p>
       <iframe width="100%" height="480"
               src="https://www.youtube.com/embed/P4K1LE-rkU4"
@@ -76,7 +77,19 @@
     <section id="enhancements">
       <h2>Milestone Two: Software Analysis and Design</h2>
       <p>
-        [Placeholder: describe Dark Mode implementation and password hashing with screenshots.]
+        For the first augmentation, I decided on implementing a Dark Mode toggle utilizing Android Studio's built-in support for night themes. I did this by editing themes.xml and themes.xml (night), as well as adding color resources to colors.xml and colors.xml (night). Next, I added a
+        SwitchMaterial into activity_settings.xml before wiring up the logic in SettingsActivity.java, which required some slight structural adjustments.
+      </p>
+      <p>
+        [Placeholder: screenshot of light vs. dark mode with the SwitchMaterial here!]
+      </p>
+      <p>
+        After finalizing the Dark Mode augmentation, I decided to immediately implement password hashing, since my user database had them stored in plaintext. I recognized this as a critical vulnerability during my code review. I accomplished this by creating a new PasswordUtils class with
+        logic for SHA-256 encryption (I decided on SHA-256 because I had used it previously), including error handling. 
+      </p>
+      <p>
+        A full narrative for this augmentation can be read HERE (I'd like to nav to the word doc I submitted, I'll need to add it to the repo)
+        All build files (original and final) can be viewed HERE (I'll be including the original files as well as the .zip of each milestone in the repo, so this should simply link to the repo)
       </p>
       <h2>Milestone Three: Algorithms and Data Structures</h2>
       <p>
