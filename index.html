@@ -93,8 +93,14 @@
       </p>
       <h2>Milestone Three: Algorithms and Data Structures</h2>
       <p>
-        [Placeholder: describe line graph and linear regression algorithm implementation, with screenshots.]
+        My second enhancement was to involve algorithms and data structure, and I had settled on implementing a linear regression algorithm that uses the current data to make a prediction for what day the goal weight will be met. I thought this enhancement would look rather plain on it's own,
+        so I made the decision to include it with a LineChart for improved data visualization (a stretch goal of the previous augment). I also made the design decision to have the graph be contained to a dialog box, rather than it's own layout, so the user wasn't navigated away from their other
+        data. Importing the dependencies was tricky, but once they were working, I went on to address the linear regression algorithm. This wasn't too bad to implement: I convert the dates to a number based on the amount of days since the first entry, calculate slope and intercept, and then
+        predict the daysToGoal before returning it as a calendar date. Lastly, I needed a means to test these additions, so I made a test block with some hardcoded entries that can be commented in/out for debugging.
       </p>
+      </p>
+      <img src="assets/images/CS499 Milestone Three.JPG" alt="Line Graph with Algorithm" width="100%">
+      <p>
       <p>
         A full narrative for this augmentation can be read <a href="https://github.com/GreenlVlachine/GreenlVlachine.github.io/blob/main/narratives/CS-499%20Milestone%20Three.pdf" target="_blank">HERE</a>.
       </p>
@@ -103,7 +109,12 @@
       </p>
       <h2>Milestone Four: Databases</h2>
       <p>
-        [Placeholder: describe database augmentation with Firebase cloud sync, with screenshots.]
+        As my final enhancement for the weight tracker app, I decided to work with the Android tool Firebase to migrate my database to a Cloud backend. It was my greatest challenge so far, and with time constraints and real-world obligations, I wasn't able to implement as many features as I
+        had considered when performing my code review. After a couple failed iterations, I made the decision to roll back and instead sync the Firestore with my existing local SQLite database. There was a good amount of troubleshooting required to ensure proper synchronization, which I detail
+        more in my narrative, but I was eventually successful in implementing the Firestore Database.
+      </p>
+      <p>
+        [Placeholder: Milestone Four Screenshot that I haven't uploaded yet]
       </p>
       <p>
         A full narrative for this augmentation can be read <a href="https://github.com/GreenlVlachine/GreenlVlachine.github.io/blob/main/narratives/CS-499%20Milestone%20Four.pdf" target="_blank">HERE</a>.
