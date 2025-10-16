@@ -31,10 +31,10 @@
     <section id="self-assessment">
       <h2>Professional Self-Assessment</h2>
       <p>
-        Before setting out to begin my Computer Science degree, I hadn't even dabbled in learning a programming language - all of my work experience was in the medical field. I became a surgical technologist through the military as soon as I finished high school. I can recall growing up,
+        Before setting out to begin my Computer Science degree, I hadn't even dabbled in learning a programming language - all of my work experience was in the medical field. I became a surgical technologist through the military as soon as I finished high school. Growing up,
         I had always wanted to make games...I loved playing them, and always thought it would be so cool to get under the hood myself. This is still my long-term goal, even if I must first cultivate experience in an adjacent field, such as security or quality assurance. This ePortfolio aims to
         showcase the progress I've made from learning my first programming language to making impactful augmentations to my chosen technical artifact.  Looking back on my journey, I am confident in using my newly learned skills and abilities to continue evolving as a software developer, and to 
-        leverage my organizational skills and discipline from my previous career in the operating room to produce professional, quality products.
+        leverage the organization and discipline I developed in the operating room to produce professional, high-quality software.
       </p>
       <p>
         Throughout my curriculum, I’ve developed a strong foundation in both the technical and collaborative aspects of software development. Early courses such as Software Analysis and Design introduced me to Agile and Scrum methodologies, emphasizing the importance of communication, role clarity,
@@ -46,7 +46,7 @@
         For this capstone, we had instructions to perform augmentations on pre-existing coursework that addressed three categories: software design and engineering, algorithms and data structures, and databases. I made the early decision to choose my Android Studio application from CS-360 for all 
         three milestones - while it may not show as much variety, I felt this was the best way to measure my personal growth. Many projects in the curriculum involved a pre-existing codebase that we would then modify with our newly learned skills, but this Android application is entirely mine.
         The project was developed using Java syntax and Android SDK, and it includes multiple databases that use SQLite. The purpose of the app was for users to select a goal weight, and then log their weights in a database to monitor their progress. Before making any modifications, the app illustrated
-        a foundational understanding of development practices, such as database integration and CRUD operations, UI/UX design, and data integrity. Reflecting on my work while implementing the augmentations allowed me to achieve important course outcomes:
+        a foundational understanding of development practices, such as database integration and CRUD operations, UI/UX design, and data integrity. Reflecting on my work through these augmentations helped me demonstrate key course outcomes:
       <ul>
         <li>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science.</li>
         <li>Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.</li>
@@ -77,13 +77,13 @@
     <section id="enhancements">
       <h2>Milestone Two: Software Analysis and Design</h2>
       <p>
-        For the first augmentation, I decided on implementing a Dark Mode toggle utilizing Android Studio's built-in support for night themes. I did this by editing themes.xml and themes.xml (night), as well as adding color resources to colors.xml and colors.xml (night). Next, I added a
+        For the first augmentation, I decided on implementing a Dark Mode toggle utilizing Android Studio's built-in support for night themes. I implemented this by editing themes.xml and themes.xml (night), as well as adding color resources to colors.xml and colors.xml (night). Next, I added a
         SwitchMaterial into activity_settings.xml before wiring up the logic in SettingsActivity.java, which required some slight structural adjustments.
       </p>
       <img src="assets/images/CS499 Milestone Two.JPG" alt="Standard vs. Dark Mode" width="100%">
       <p>
-        After finalizing the Dark Mode augmentation, I decided to immediately implement password hashing, since my user database had them stored in plaintext. I recognized this as a critical vulnerability during my code review. I accomplished this by creating a new PasswordUtils class with
-        logic for SHA-256 encryption (I decided on SHA-256 because I had used it previously), including error handling. 
+        After finalizing the Dark Mode augmentation, I next implemented password hashing, since my user database had them stored in plaintext. I recognized this as a critical vulnerability during my code review. I accomplished this by creating a new PasswordUtils class with
+        logic for SHA-256 encryption (I decided on SHA-256 because I had used it previously), including error handling. This demonstrated the use of well-founded tools to accomplish goals as well as a strong security mindset.
       </p>
       <p>
         A full narrative for this augmentation can be read <a href="https://github.com/GreenlVlachine/GreenlVlachine.github.io/blob/main/narratives/CS-499%20Milestone%20Two.pdf" target="_blank">HERE</a>.
@@ -93,13 +93,14 @@
       </p>
       <h2>Milestone Three: Algorithms and Data Structures</h2>
       <p>
-        My second enhancement was to involve algorithms and data structure, and I had settled on implementing a linear regression algorithm that uses the current data to make a prediction for what day the goal weight will be met. I thought this enhancement would look rather plain on it's own,
-        so I made the decision to include it with a LineChart for improved data visualization (a stretch goal of the previous augment). I also made the design decision to have the graph be contained to a dialog box, rather than it's own layout, so the user wasn't navigated away from their other
-        data. Importing the dependencies was tricky, but once they were working, I went on to address the linear regression algorithm. This wasn't too bad to implement: I convert the dates to a number based on the amount of days since the first entry, calculate slope and intercept, and then
-        predict the daysToGoal before returning it as a calendar date. Lastly, I needed a means to test these additions, so I made a test block with some hardcoded entries that can be commented in/out for debugging.
+        My second enhancement was to involve algorithms and data structure, and I had settled on implementing a linear regression algorithm that uses the current data to make a prediction for what day the goal weight will be met. I thought this enhancement would look rather plain on its own,
+        so I made the decision to include it with a LineChart for improved data visualization (a stretch goal of the previous augment). I also made the design decision to have the graph be contained to a dialog box, rather than its own layout, so the user wasn't navigated away from their other
+        data. Importing the dependencies was tricky, but once they were working, I went on to address the linear regression algorithm. This wasn't too bad to implement: I converted each date to a numeric value representing the number of days since the first entry, calculate slope and intercept, and then
+        predict the daysToGoal before returning it as a calendar date. To verify the algorithm's accuracy, I made a test block with some hardcoded entries that can be commented in or out for debugging. This implementation illustrates my strengths in computing solutions that solve
+        problems using algorithmic principles.
       </p>
       </p>
-      <img src="assets/images/CS499 Milestone Three.JPG" alt="Line Graph with Algorithm" width: 70%; height: auto; border-radius: 8px;>
+      <img src="assets/images/CS499 Milestone Three.JPG" alt="Line Graph with Algorithm" style="width:70%; height:auto; border-radius:8px; display:block; margin:auto;">
       <p>
       <p>
         A full narrative for this augmentation can be read <a href="https://github.com/GreenlVlachine/GreenlVlachine.github.io/blob/main/narratives/CS-499%20Milestone%20Three.pdf" target="_blank">HERE</a>.
@@ -109,9 +110,9 @@
       </p>
       <h2>Milestone Four: Databases</h2>
       <p>
-        As my final enhancement for the weight tracker app, I decided to work with the Android tool Firebase to migrate my database to a Cloud backend. It was my greatest challenge so far, and with time constraints and real-world obligations, I wasn't able to implement as many features as I
+        As my final enhancement for the weight tracker app, I decided to work with the Android Studio tool Firebase to migrate my database to a Cloud backend. It was my greatest challenge so far, and with time constraints and real-world obligations, I wasn't able to implement as many features as I
         had considered when performing my code review. After a couple failed iterations, I made the decision to roll back and instead sync the Firestore with my existing local SQLite database. There was a good amount of troubleshooting required to ensure proper synchronization, which I detail
-        more in my narrative, but I was eventually successful in implementing the Firestore Database.
+        more in my narrative, but I was eventually successful in implementing the Firestore Database. This augmentation highlights the use of innovative techniques for the purpose of implementing solutions that deliver value.
       </p>
       <p>
         <img src="assets/images/CS499 Milestone Four.JPG" alt="Firestore Database" width="100%">
