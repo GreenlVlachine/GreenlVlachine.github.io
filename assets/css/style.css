@@ -119,3 +119,47 @@ footer a:hover {
   color: white;
   text-decoration: underline;
 }
+/* Page background */
+body {
+  background-color: #f5f8f5; /* very light green tint */
+  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section container styling */
+section {
+  background-color: #ffffff; /* white background for readability */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 64, 32, 0.1);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+/* Header and navigation */
+header, nav {
+  background-color: #1b4332; /* forest green */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #d4af37; /* gold accent */
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Section headings */
+h2 {
+  color: #1b4332;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 0.3rem;
+}
